@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --background: #161513;
+  --foreground: #171717;
+  --primary-color: #222222;
+  --secondary-color: #8491A0;
+  --card-color: #2A2A2A;
+  --blue-gradient: linear-gradient(135deg, #5BADFF 0%, #1373D1 100%);
+  --primary-gradient: linear-gradient(135deg, #FF8660 0%, #9A33FF 100%);
+  --orange-gradient: linear-gradient(135deg, #FF8660 0%, #D5491D 100%);
+  --secondary-text: #C5C5C5;
+  --angular-text: #DD0031;
+  --react-text: #61DAFB;
+  --next-text: #000000;
+  --node-text: #339933;
+  --spring-text: #6DB33F;
+  --java-text: #ED8B00;
+  --typescript-text: #3178C6;
+  --tailwind-text: #06B6D4;
+  --docker-text: #0db7ed;
+  --sql-text: #fffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --animate-fade-name: fadeInOut 5s ease-in-out infinite;
+  --animate-gradient-move: gradientMove 3s ease infinite;
+  --animate-typing-header: typing 3s steps(12) infinite alternate, blink .7s infinite;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.text-gradient {
+  background: var(--orange-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 5px rgba(255, 134, 96, 0.2));
+  display: inline-block;
+}
+
+.text-title-full-stack {
+  background: var(--primary-gradient);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 0;
+    filter: blur(2px);
+  }
+
+  10% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
