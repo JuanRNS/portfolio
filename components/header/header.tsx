@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const NAV_ITEMS = ["Home", "Sobre", "Projetos", "Contato"] as const;
 
@@ -25,7 +25,7 @@ export default function Header() {
 
                         <span className="flex items-center !leading-none">
                             /
-                            <FaChevronLeft />
+                            <FaChevronRight />
                         </span>
                     </h1>
                 </div>
