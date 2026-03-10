@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { FaChevronLeft } from "react-icons/fa";
 
-const NAV_ITEMS = ["Home", "Projetos", "Sobre", "Contato"] as const;
+const NAV_ITEMS = ["Home", "Sobre", "Projetos", "Contato"] as const;
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,7 @@ export default function Header() {
             <div className="flex items-center justify-between max-w-[1200px] mx-auto px-6 py-4">
                 <div className="flex items-center cursor-default select-none">
                     <h1 className="flex items-center font-mono text-2xl font-bold overflow-hidden whitespace-nowrap">
-                        <span className="material-symbols-outlined text-2xl !leading-none">
-                            chevron_left
-                        </span>
+                        <FaChevronLeft />
 
                         <span className="relative inline-block overflow-hidden whitespace-nowrap border-r-2 border-white-500 animate-typing-header">
                             <span className="text-white tracking-wide px-1">
@@ -26,9 +25,7 @@ export default function Header() {
 
                         <span className="flex items-center !leading-none">
                             /
-                            <span className="material-symbols-outlined text-2xl !leading-none">
-                                chevron_right
-                            </span>
+                            <FaChevronLeft />
                         </span>
                     </h1>
                 </div>

@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Juan Ramalho",
   description: "Portfolio de Juan Ramalho",
+  icons: {
+    icon: "/logo-jr.png",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +29,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

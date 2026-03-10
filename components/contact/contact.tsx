@@ -5,7 +5,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 export default function Contact() {
     return (
-        <footer className="w-full flex justify-center py-16 px-6 border-t border-white/10 mt-12 bg-[#161513]" id="contato">
+        <footer className="w-full flex justify-center py-16 px-6 border-t border-white/10 mt-12 bg-[#161513] scroll-mt-20" id="contato">
             <div className="max-w-4xl w-full flex flex-col items-start gap-6">
                 <h2 className="text-2xl font-bold text-white">Contato</h2>
 

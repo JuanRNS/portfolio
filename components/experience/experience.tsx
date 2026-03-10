@@ -1,6 +1,6 @@
 export default function Experience() {
     return (
-        <section className="w-full flex justify-center py-12 px-6" id="sobre">
+        <section className="w-full flex justify-center py-12 px-6 scroll-mt-20" id="sobre">
             <div className="max-w-4xl w-full flex flex-col items-center">
                 <h2 className="text-3xl font-bold text-[#5BADFF] mb-16 tracking-widest uppercase">
                     EXPERIÊNCIA PROFISSIONAL
