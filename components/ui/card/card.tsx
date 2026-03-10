@@ -12,7 +12,7 @@ interface CardProps {
 
 export default function Card({ imagem, titulo, subtitulo, descricao, link }: CardProps) {
     return (
-        <div className="group relative flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 cursor-pointer w-[20vw]">
+        <div className="group relative flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 cursor-pointer w-[85vw] sm:w-[350px] md:w-[45vw] lg:w-[30vw] xl:w-[20vw]">
             <Link href={link} target="_blank">
                 <div className="relative w-full h-56 lg:h-64 overflow-hidden">
                     <Image
