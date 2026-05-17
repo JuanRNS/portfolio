@@ -42,14 +42,14 @@ const ProjectCard = memo(function ProjectCard({ project, index, onOpen }: Projec
             <button
                 type="button"
                 onClick={handleOpen}
-                className="group relative grid w-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.045] text-left transition duration-300 hover:-translate-y-1 hover:border-white/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--mint)] md:grid-cols-[0.95fr_1.05fr]"
+                className="group relative grid w-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.045] text-left transition duration-300 hover:-translate-y-1 hover:border-white/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--mint)] md:grid-cols-[0.95fr_1.05fr] md:h-[420px]"
             >
                 <span
                     className="absolute inset-x-0 top-0 h-1"
                     style={{ background: project.accent }}
                 />
 
-                <span className="relative block min-h-[260px] overflow-hidden md:min-h-full">
+                <span className="relative block h-[260px] overflow-hidden md:h-full">
                     <Image
                         src={project.images[0].src}
                         alt={project.images[0].alt}
@@ -61,7 +61,7 @@ const ProjectCard = memo(function ProjectCard({ project, index, onOpen }: Projec
                     <span className="absolute inset-0 bg-gradient-to-t from-[#071313] via-transparent to-transparent" />
                 </span>
 
-                <span className="flex min-h-[280px] flex-col justify-between gap-8 p-6 md:p-8">
+                <span className="flex flex-col justify-between gap-8 p-6 md:p-8">
                     <span>
                         <span className="font-mono text-xs font-bold uppercase" style={{ color: project.accent }}>
                             {project.status}

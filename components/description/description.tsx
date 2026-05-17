@@ -68,7 +68,9 @@ export default function Description() {
 
                 <Reveal delay={0.12} direction="right" className="glass-panel relative overflow-hidden rounded-[2rem] p-5 md:p-7">
                     <div className="grid gap-5 sm:grid-cols-[0.82fr_1fr] lg:grid-cols-1 xl:grid-cols-[0.82fr_1fr]">
-                        <div className="relative aspect-[4/5] min-h-[320px] overflow-hidden rounded-[1.5rem] border border-white/10">
+                        <div className="relative aspect-[4/5] min-h-[320px] overflow-hidden rounded-[1.5rem] border border-white/10
+                        sm:aspect-[3/5] sm:min-h-[320px]
+                        ">
                             <Image
                                 src="/perfil.jpeg"
                                 alt="Foto de perfil de Juan Ramalho"
