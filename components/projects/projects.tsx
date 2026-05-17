@@ -28,25 +28,35 @@ const PROJECTS: Project[] = [
         stack: ["Next.js", "Ranking", "Gestão esportiva"],
         images: [
             {
-                src: "/app-fut-login.png",
+                src: "/tela-login.png",
                 alt: "Tela de login do App Fut",
                 label: "Login",
             },
             {
-                src: "/app-fut-register.png",
+                src: "/tela-cadastro.png",
                 alt: "Tela de cadastro do App Fut",
                 label: "Cadastro",
             },
             {
-                src: "/app-fut-criar-partida.png",
-                alt: "Tela de criação de partida do App Fut",
-                label: "Criar partida",
+                src: "/tela-home-fut.png",
+                alt: "Tela de home do App Fut",
+                label: "Home",
             },
             {
-                src: "/app-fut-ranking.png",
+                src: "/tela-home-group.png",
+                alt: "Tela de home do grupo do App Fut",
+                label: "Home do grupo",
+            },
+            {
+                src: "/tela-partidas.png",
+                alt: "Tela de partidas do App Fut",
+                label: "Partidas",
+            },
+            {
+                src: "/tela-ranking.png",
                 alt: "Tela de ranking do App Fut",
                 label: "Ranking",
-            },
+            }
         ],
     },
 ];
